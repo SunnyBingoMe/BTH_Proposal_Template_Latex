@@ -5,69 +5,34 @@
 \textclass article
 \begin_preamble
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% BTH Master Thesis Proposal Template for Latex 3.1
+%% Name: BTH Master Thesis Proposal Template for Latex version 3.1
 %% Author: admin@SunnyBoy.me
-%% Version 0.9a
+%% Code Version: 2011.12.30.03.35-1.0a
 %% 2011-12-30
-%% Based on MicroSoft Word Thesis Proposal Template 3.1 (http://is.gd/nbzCjS)
+%% Based on MicroSoft Word Thesis Proposal Template version 3.1 (http://is.gd/nbzCjS)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-%\usepackage[latin9]{inputenc}
-%\usepackage[scaled]{uarial}
-\usepackage[scaled=1.12]{helvet}\renewcommand*{\familydefault}{\sfdefault} %% Only if the base font of the document is to be sans serif
+\usepackage[scaled=1.12]{helvet}\renewcommand*{\familydefault}{\sfdefault}
 
-%\usepackage{setspace}
+\addtolength{\bibsep}{-0.6 em} 
 
-
-%%%%%%%%%%%% header and footer %%%%%%%%%%%
-\usepackage{fancyhdr}\usepackage{lastpage}\usepackage{layout}%\pagestyle{empty}	% no footer and header
-%set header
-%\begin{CJK}{GBK}{kai}\end{CJK}
-%%%% header %%%%%%%
+\usepackage{fancyhdr}\usepackage{lastpage}\usepackage{layout}
 \renewcommand{\headwidth}{16.7cm}
-\renewcommand{\headrulewidth}{0pt}	%width of header line
-\lhead{}%{page \thepage\ of \pageref{LastPage}}
+\renewcommand{\headrulewidth}{0pt}
+\lhead{}
 \chead{}
 \rhead{Based on Thesis Proposal Template version 3.1}
-%%%% footer %%%%%%%
-\renewcommand{\footrulewidth}{0pt}	%width of footer line
+\renewcommand{\footrulewidth}{0pt}
 \lfoot{}
 \cfoot{}
 \rfoot{Page \thepage}
-%\footskip = 10pt
-%\setlength{\skip\footins}{5cm}	%distance between footer and main content
-\renewcommand{\footnotesize}{}	%fontsize of footer
-
-
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
-%\providecommand{\LyX}{L\kern-.1667em\lower.25em\hbox{Y}\kern-.125emX\@}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Textclass specific LaTeX commands.
-%\newenvironment{lyxcode}
-%{\par\begin{list}{}{
-%\setlength{\rightmargin}{0 mm}
-%\setlength{\rightmargin}{\leftmargin}
-%\setlength{\listparindent}{0pt}% needed for AMS classes
-%\raggedright
-%\setlength{\itemsep}{0pt}
-%\setlength{\parsep}{0pt}
-%\normalfont\ttfamily}%
-% \item[]}
-%{\end{list}}
+\renewcommand{\footnotesize}{}
 
 
 \linespread{1.1}
-%\setlength{\parskip}{0\baselineskip}
-
-%\setlength{\textwidth}{20cm}
-%\setlength{\textheight}{20cm}
 
 
-%%%%%%%%%%% User specified LaTeX commands.%%%%%%%%%
 \newcommand{\emptyLine}{
 \vspace{16pt}
 }
@@ -77,20 +42,12 @@
 \newcommand{\bthProposalTitle}[1]{
 \noindent\textbf{\Large{#1}}
 }
-%\renewcommand{\section}[1]{
-%	\emptyLine{}
-%	\noindent\textbf{\textit\Large{#1}}
-%	\vspace{5pt} \\
-%}
 \renewcommand{\section}{
 \@startsection {section}{1}{\z@}%
 {-2.2ex \@plus -1ex \@minus -.2ex}%
 {0.6ex \@plus.2ex}%
 {\itshape\large\bfseries}
 }
-
-
-%\makeatother
 
 \usepackage{babel}
 \end_preamble
@@ -124,7 +81,7 @@
 \use_esint 1
 \use_mhchem 1
 \use_mathdots 1
-\cite_engine basic
+\cite_engine natbib_authoryear
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
@@ -157,60 +114,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-%
-\backslash
-title{Proposal for Master Thesis in Electrical Engineering}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-%
-\backslash
-maketitle
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-%
-\backslash
-section{Proposal for Master Thesis in Electrical Engineering}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
 
 \backslash
 bthProposalTitle{
@@ -233,28 +136,7 @@ status collapsed
 \end_layout
 
 \begin_layout Section
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-{
-\end_layout
-
-\end_inset
-
 Base information
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -267,7 +149,7 @@ Student 1 Name, email and P.Nr.
 \begin_inset Newline newline
 \end_inset
 
-
+ 
 \series bold
 Student 2 Name, email and P.Nr.
 \series default
@@ -517,6 +399,22 @@ Software engineering courses completed at BTH relevant for thesis work
 : 
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+itemsep
+\end_layout
+
+\end_inset
+
+=-2pt 
+\end_layout
+
 \begin_layout Itemize
 \begin_inset ERT
 status collapsed
@@ -638,6 +536,22 @@ Software engineering courses completed at BTH relevant for thesis work
 : 
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+itemsep
+\end_layout
+
+\end_inset
+
+=-2pt 
+\end_layout
+
 \begin_layout Itemize
 \begin_inset ERT
 status collapsed
@@ -714,9 +628,6 @@ status collapsed
 \end_layout
 
 \begin_layout Section
-
-\shape italic
-\size large
 Background
 \end_layout
 
@@ -785,9 +696,6 @@ This is paragraph 3.
 \end_layout
 
 \begin_layout Section
-
-\shape italic
-\size large
 Aims and objectives
 \end_layout
 
@@ -826,6 +734,22 @@ status collapsed
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+itemsep
+\end_layout
+
+\end_inset
+
+=-2pt 
+\end_layout
+
 \begin_layout Itemize
 \begin_inset ERT
 status collapsed
@@ -927,9 +851,6 @@ status collapsed
 \end_layout
 
 \begin_layout Section
-
-\shape italic
-\size large
 Research questions
 \end_layout
 
@@ -951,6 +872,22 @@ status collapsed
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+itemsep
+\end_layout
+
+\end_inset
+
+=-2pt 
+\end_layout
+
 \begin_layout Itemize
 \begin_inset ERT
 status collapsed
@@ -1052,9 +989,6 @@ status collapsed
 \end_layout
 
 \begin_layout Section
-
-\shape italic
-\size large
 Expected outcomes
 \end_layout
 
@@ -1081,9 +1015,6 @@ status collapsed
 \end_layout
 
 \begin_layout Section
-
-\shape italic
-\size large
 Research Methodology
 \end_layout
 
@@ -1109,7 +1040,7 @@ status collapsed
 This is a paragraph 0.
  citation example: 
 \begin_inset CommandInset citation
-LatexCommand cite
+LatexCommand citet
 key "5954343,testBook"
 
 \end_inset
@@ -1118,9 +1049,6 @@ key "5954343,testBook"
 \end_layout
 
 \begin_layout Section
-
-\shape italic
-\size large
 Risks
 \end_layout
 
@@ -1143,6 +1071,22 @@ status collapsed
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+itemsep
+\end_layout
+
+\end_inset
+
+=-2pt 
+\end_layout
+
 \begin_layout Itemize
 \begin_inset ERT
 status collapsed
@@ -1244,9 +1188,6 @@ status collapsed
 \end_layout
 
 \begin_layout Section
-
-\shape italic
-\size large
 Time plan
 \end_layout
 
@@ -1267,6 +1208,22 @@ s, milestones within project/subproject, reviews etc.}
 \end_inset
 
 Scheduled Milestones and Meetings: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+itemsep
+\end_layout
+
+\end_inset
+
+=-2pt 
 \end_layout
 
 \begin_layout Itemize
@@ -1566,19 +1523,6 @@ status collapsed
 
 \end_inset
 
- 
-\end_layout
-
-\begin_layout Bibliography
-\labelwidthstring References
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-key "test KeyName"
-
-\end_inset
-
-Lamport, Leslie.
- LaTeX: A Document Preparation System.
  
 \end_layout
 

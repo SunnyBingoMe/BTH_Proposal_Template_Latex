@@ -1,0 +1,230 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% BTH Master Thesis Proposal Template for Latex 3.1
+%% Author: admin@SunnyBoy.me
+%% Version 1.0
+%% 2011-12-30
+%% Based on MicroSoft Word Thesis Proposal Template 3.1 (http://is.gd/nbzCjS)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[10pt,english,a4paper]{article}
+\usepackage[T1]{fontenc}
+%\usepackage[latin9]{inputenc}
+%\usepackage[scaled]{uarial}
+\usepackage[scaled=1.1]{helvet}
+\renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
+\pagestyle{plain}
+\usepackage{varioref}
+\usepackage{prettyref}
+%\usepackage{setspace}
+
+
+%%%%%%%%%%%% header and footer %%%%%%%%%%%
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{layout}
+%\pagestyle{empty}	% no footer and header
+\pagestyle{fancy}	%set header
+%\begin{CJK}{GBK}{kai}\end{CJK}
+%%%% header %%%%%%%
+\renewcommand\headwidth{16.5cm}
+\renewcommand{\headrulewidth}{0pt}	%width of header line
+\lhead{}%{page \thepage\ of \pageref{LastPage}}
+\chead{}
+\rhead{Based on Thesis Proposal Template version 3.1}
+%%%% footer %%%%%%%
+\renewcommand{\footrulewidth}{0pt}	%width of footer line
+\lfoot{}
+\cfoot{}
+\rfoot{Page \thepage}
+%\footskip = 10pt
+%\setlength{\skip\footins}{5cm}	%distance between footer and main content
+\renewcommand{\footnotesize}{}	%fontsize of footer
+
+
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+%\providecommand{\LyX}{L\kern-.1667em\lower.25em\hbox{Y}\kern-.125emX\@}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Textclass specific LaTeX commands.
+%\newenvironment{lyxcode}
+%{\par\begin{list}{}{
+%\setlength{\rightmargin}{0 mm}
+%\setlength{\rightmargin}{\leftmargin}
+%\setlength{\listparindent}{0pt}% needed for AMS classes
+%\raggedright
+%\setlength{\itemsep}{0pt}
+%\setlength{\parsep}{0pt}
+%\normalfont\ttfamily}%
+% \item[]}
+%{\end{list}}
+
+
+\usepackage[top=3.0cm, bottom=2.5cm, left=2.5cm, right=2.5cm, headsep=1.3cm, foot=1.3cm]{geometry}
+\linespread{1.0}
+%\setlength{\parskip}{0\baselineskip}
+\setcounter{secnumdepth}{0}
+%\setlength{\textwidth}{20cm}
+%\setlength{\textheight}{20cm}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+\newcommand{\sunnyLine}{\vspace{16pt}}
+%\newcommand{\sunnysec}{\section{\large\textit{#1}}}
+
+%\renewcommand{\section}{
+%	\@startsection
+%		{section}{1}{0pt}{-1.5ex plus -1ex minus -.2ex}
+%		{1ex plus .2ex}{\large\sffamily\slshape\headlinecolor}
+%}
+
+
+
+
+
+%\makeatother
+
+\usepackage{babel}
+
+\begin{document}
+
+%\title{Proposal for Master Thesis in Electrical Engineering}
+%\maketitle
+
+
+%\section*{\begin{huge}Proposal for Master Thesis in Electrical Engineering\end{huge}}
+\section*{Proposal for Master Thesis in Electrical Engineering}
+
+
+\section*{\large\textit{Base information}}
+
+\noindent
+\textbf{Student 1 Name, email and P.Nr.}: Aaa Bbb, ab@student.bth.se, 000000-0000 \\
+\textbf{Student 2 Name, email and P.Nr.}: Ccc Ddd, cd@student.bth.se, 000000-0000  
+\sunnyLine{}
+
+\noindent\textbf{Title (preliminary)}: Analysis of xxx
+\sunnyLine{}
+
+\noindent\textbf{Link to project home page (if any)}: http://example.com/projectName
+\sunnyLine{}
+
+\noindent
+\textbf{Academic Advisor}: Xxx Yyy \\
+\textbf{Faculty Reviewer}:  Zzz Www
+\sunnyLine{}
+
+\noindent\textbf{Start- and end-date}: 20120101 - 20120601
+\sunnyLine{}
+
+\noindent\textbf{Thesis type (research / industrial, theoretical / empirical)}: industrial, empirical
+\sunnyLine{}
+
+\subsection*{Student 1 suitability}
+\noindent\textbf{Electrical engineering course credits completed at BTH (total)}: 82.5 ECTS credit points
+\sunnyLine{}
+
+\noindent\textbf{Software engineering courses completed at BTH relevant for thesis work}:
+\begin{itemize}
+\item{...}
+\item{...}
+\item{...}
+\end{itemize}
+
+
+\subsection*{Student 2 suitability}
+\noindent\textbf{Electrical engineering course credits completed at BTH (total)}: 75 ECTS credit points
+\sunnyLine{}
+
+\noindent\textbf{Software engineering courses completed at BTH relevant for thesis work}:
+\begin{itemize}
+\item{...}
+\item{...}
+\item{...}
+\end{itemize}
+
+
+\section{\large\textit{Background}}
+%{1 paragraph introducing and motivating the problem. Should answer: Which area of EE is this about? What particular part of that area? Why is this important?}
+This is a paragraph 0.
+
+%{2-3 paragraphs giving more detailed background. Should answer: What has been done by others in this area? What is our current knowledge?}
+This is paragraph 1.
+
+This is paragraph 2.
+
+%{1 paragraph detailing the gap in our current knowledge. Should answer: What is missing in our current knowledge? What is the main purpose of doing this project? Overall, what will we do?}
+This is paragraph 3.
+
+
+\section{\large\textit{Aims and objectives}}
+%{1 sentence clearly stating the main aim of this thesis project.}
+
+%{3-7 objectives/sub-goals that follows from the main aim. By reaching them the main aim is fulfilled.}
+\begin{itemize}
+\item{...}
+\item{...}
+\item{...}
+\item{...}
+\end{itemize}
+
+
+\section{\large\textit{Research questions}}
+%{3-7 clearly stated and answerable research questions.}
+\begin{itemize}
+\item{...}
+\item{...}
+\item{...}
+\item{...}
+\end{itemize}
+
+
+\section{\large\textit{Expected outcomes}}
+%{State the concrete results that will be the deliverables/output from the project. Should describe which form they are expected to take. Examples are: tables, models, guidelines, checklists, prototypes, designs, etc.}
+...
+
+
+\section{\large\textit{Research Methodology}}
+%{Describe the research methodology that you will use in different parts of your project to be able to answer the research questions and produce the expected outcomes and thus fulfill the objectives and the main aim. Should clearly answer: How will you get an answer to each of the research questions stated above?}
+This is a paragraph 0. citation example: \cite{5954343,testBook}
+
+
+\section{\large\textit{Risks}}
+%{State the main threats to your study. Also state how you will overcome them.}
+\begin{itemize}
+\item{...}
+\item{...}
+\item{...}
+\item{...}
+\end{itemize}
+
+
+\section{\large\textit{Time plan}}
+%{State the deadlines and dates for meetings, phases of the project, sub-projects, milestones within project/subproject, reviews etc.}
+Scheduled Milestones and Meetings:
+\begin{itemize}
+\item{...}
+\item{20080101: Start writing the proposal}
+\item{20080108: First draft of proposal to supervisor}
+\item{20080114: Final draft of proposal to supervisor}
+\item{20080131: End of literature review}
+\item{20080212: Interview guide finished}
+\item{20080308: All interviews conducted and transcribed}
+\item{...}
+\item{20080505: Supervisor tells examiner we are ok for presentation}
+\item{20080522: Updated final draft sent to opponents}
+\item{20080604: Thesis Presentation}
+\item{20080215: Final thesis updated, approved and sent to examiner}
+\end{itemize}
+
+References
+\begin{thebibliography}{}
+\bibitem{test KeyName}Lamport, Leslie. \LaTeX{}: A Document Preparation
+System.
+\end{thebibliography}
+
+\bibliographystyle{plain}
+\bibliography{references}
+
+\end{document}

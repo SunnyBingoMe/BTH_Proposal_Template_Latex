@@ -1,7 +1,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% BTH Master Thesis Proposal Template for Latex 3.1
 %% Author: admin@SunnyBoy.me
-%% Version 0.9a
+%% Version: 2011.12.30.03.35-1.0a
 %% 2011-12-30
 %% Based on MicroSoft Word Thesis Proposal Template 3.1 (http://is.gd/nbzCjS)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -11,11 +11,13 @@
 %\usepackage[latin9]{inputenc}
 %\usepackage[scaled]{uarial}
 \usepackage[scaled=1.12]{helvet}
-\renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
+\renewcommand*\familydefault{\sfdefault}
 \pagestyle{plain}
 \usepackage{varioref}
 \usepackage{prettyref}
-%\usepackage{setspace}
+\usepackage[sort&compress,longnamesfirst]{natbib}
+\addtolength{\bibsep}{-0.6 em} 
+
 
 
 %%%%%%%%%%%% header and footer %%%%%%%%%%%
@@ -36,11 +38,7 @@
 \lfoot{}
 \cfoot{}
 \rfoot{Page \thepage}
-%\footskip = 10pt
-%\setlength{\skip\footins}{5cm}	%distance between footer and main content
 \renewcommand{\footnotesize}{}	%fontsize of footer
-
-
 
 \makeatletter
 
@@ -63,8 +61,8 @@
 
 \usepackage[top=3.05cm, bottom=2.5cm, left=2.5cm, right=2.5cm, headsep=1.2cm, foot=1.2cm]{geometry}
 \linespread{1.1}
-%\setlength{\parskip}{0\baselineskip}
-\setcounter{secnumdepth}{0}
+%\setlength{\parskip}{0\baselineskip}	%v-space between paragraphs
+\setcounter{secnumdepth}{0}	%stop section number, just like section*{}
 %\setlength{\textwidth}{20cm}
 %\setlength{\textheight}{20cm}
 
@@ -106,7 +104,7 @@
 \bthProposalTitle{Proposal for Master Thesis in Electrical Engineering}
 
 
-\section{{Base information}}
+\section{Base information}
 
 \noindent
 \textbf{Student 1 Name, email and P.Nr.}: Aaa Bbb, ab@student.bth.se, 000000-0000 \\
@@ -135,7 +133,7 @@
 \emptyLine{}
 
 \noindent\textbf{Software engineering courses completed at BTH relevant for thesis work}:
-\begin{itemize}
+\begin{itemize}\itemsep=-2pt
 \item{...}
 \item{...}
 \item{...}
@@ -147,14 +145,14 @@
 \emptyLine{}
 
 \noindent\textbf{Software engineering courses completed at BTH relevant for thesis work}:
-\begin{itemize}
+\begin{itemize}\itemsep=-2pt
 \item{...}
 \item{...}
 \item{...}
 \end{itemize}
 
 
-\section{\large\textit{Background}}
+\section{Background}
 %{1 paragraph introducing and motivating the problem. Should answer: Which area of EE is this about? What particular part of that area? Why is this important?}
 This is a paragraph 0.
 
@@ -167,11 +165,11 @@ This is paragraph 2.
 This is paragraph 3.
 
 
-\section{\large\textit{Aims and objectives}}
+\section{Aims and objectives}
 %{1 sentence clearly stating the main aim of this thesis project.}
 ...
 %{3-7 objectives/sub-goals that follows from the main aim. By reaching them the main aim is fulfilled.}
-\begin{itemize}
+\begin{itemize}\itemsep=-2pt
 \item{...}
 \item{...}
 \item{...}
@@ -179,9 +177,9 @@ This is paragraph 3.
 \end{itemize}
 
 
-\section{\large\textit{Research questions}}
+\section{Research questions}
 %{3-7 clearly stated and answerable research questions.}
-\begin{itemize}
+\begin{itemize}\itemsep=-2pt
 \item{...}
 \item{...}
 \item{...}
@@ -189,19 +187,19 @@ This is paragraph 3.
 \end{itemize}
 
 
-\section{\large\textit{Expected outcomes}}
+\section{Expected outcomes}
 %{State the concrete results that will be the deliverables/output from the project. Should describe which form they are expected to take. Examples are: tables, models, guidelines, checklists, prototypes, designs, etc.}
 ...
 
 
-\section{\large\textit{Research Methodology}}
+\section{Research Methodology}
 %{Describe the research methodology that you will use in different parts of your project to be able to answer the research questions and produce the expected outcomes and thus fulfill the objectives and the main aim. Should clearly answer: How will you get an answer to each of the research questions stated above?}
 This is a paragraph 0. citation example: \cite{5954343,testBook}
 
 
-\section{\large\textit{Risks}}
+\section{Risks}
 %{State the main threats to your study. Also state how you will overcome them.}
-\begin{itemize}
+\begin{itemize}\itemsep=-2pt
 \item{...}
 \item{...}
 \item{...}
@@ -209,10 +207,10 @@ This is a paragraph 0. citation example: \cite{5954343,testBook}
 \end{itemize}
 
 
-\section{\large\textit{Time plan}}
+\section{Time plan}
 %{State the deadlines and dates for meetings, phases of the project, sub-projects, milestones within project/subproject, reviews etc.}
 Scheduled Milestones and Meetings:
-\begin{itemize}
+\begin{itemize}\itemsep=-2pt
 \item{...}
 \item{20080101: Start writing the proposal}
 \item{20080108: First draft of proposal to supervisor}
@@ -226,12 +224,6 @@ Scheduled Milestones and Meetings:
 \item{20080604: Thesis Presentation}
 \item{20080215: Final thesis updated, approved and sent to examiner}
 \end{itemize}
-
-
-\begin{thebibliography}{}
-\bibitem{test KeyName}Lamport, Leslie. \LaTeX{}: A Document Preparation
-System.
-\end{thebibliography}
 
 \bibliographystyle{plain}
 \bibliography{references}

@@ -10,7 +10,7 @@
 \usepackage[T1]{fontenc}
 %\usepackage[latin9]{inputenc}
 %\usepackage[scaled]{uarial}
-\usepackage[scaled=1.1]{helvet}
+\usepackage[scaled=1.12]{helvet}
 \renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
 \pagestyle{plain}
 \usepackage{varioref}
@@ -26,7 +26,7 @@
 \pagestyle{fancy}	%set header
 %\begin{CJK}{GBK}{kai}\end{CJK}
 %%%% header %%%%%%%
-\renewcommand\headwidth{16.5cm}
+\renewcommand\headwidth{16.7cm}
 \renewcommand{\headrulewidth}{0pt}	%width of header line
 \lhead{}%{page \thepage\ of \pageref{LastPage}}
 \chead{}
@@ -61,26 +61,35 @@
 %{\end{list}}
 
 
-\usepackage[top=3.0cm, bottom=2.5cm, left=2.5cm, right=2.5cm, headsep=1.3cm, foot=1.3cm]{geometry}
-\linespread{1.0}
+\usepackage[top=3.05cm, bottom=2.5cm, left=2.5cm, right=2.5cm, headsep=1.2cm, foot=1.2cm]{geometry}
+\linespread{1.1}
 %\setlength{\parskip}{0\baselineskip}
 \setcounter{secnumdepth}{0}
 %\setlength{\textwidth}{20cm}
 %\setlength{\textheight}{20cm}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
-\newcommand{\sunnyLine}{\vspace{16pt}}
-%\newcommand{\sunnysec}{\section{\large\textit{#1}}}
-
-%\renewcommand{\section}{
-%	\@startsection
-%		{section}{1}{0pt}{-1.5ex plus -1ex minus -.2ex}
-%		{1ex plus .2ex}{\large\sffamily\slshape\headlinecolor}
+%%%%%%%%%%% User specified LaTeX commands.%%%%%%%%%
+\newcommand{\emptyLine}{
+	\vspace{16pt}
+}
+\newcommand{\debug}[1]{
+%  {#1}
+}
+\newcommand{\bthProposalTitle}[1]{
+	\noindent\textbf{\Large{#1}}
+}
+%\renewcommand{\section}[1]{
+%	\emptyLine{}
+%	\noindent\textbf{\textit\Large{#1}}
+%	\vspace{5pt} \\
 %}
-
-
-
+\renewcommand\section{
+	\@startsection {section}{1}{\z@}%
+		{-2.2ex \@plus -1ex \@minus -.2ex}%
+		{0.6ex \@plus.2ex}%
+		{\itshape\large\bfseries}
+}
 
 
 %\makeatother
@@ -93,37 +102,37 @@
 %\maketitle
 
 
-%\section*{\begin{huge}Proposal for Master Thesis in Electrical Engineering\end{huge}}
-\section*{Proposal for Master Thesis in Electrical Engineering}
+%\section{Proposal for Master Thesis in Electrical Engineering}
+\bthProposalTitle{Proposal for Master Thesis in Electrical Engineering}
 
 
-\section*{\large\textit{Base information}}
+\section{{Base information}}
 
 \noindent
 \textbf{Student 1 Name, email and P.Nr.}: Aaa Bbb, ab@student.bth.se, 000000-0000 \\
 \textbf{Student 2 Name, email and P.Nr.}: Ccc Ddd, cd@student.bth.se, 000000-0000  
-\sunnyLine{}
+\emptyLine{}
 
 \noindent\textbf{Title (preliminary)}: Analysis of xxx
-\sunnyLine{}
+\emptyLine{}
 
 \noindent\textbf{Link to project home page (if any)}: http://example.com/projectName
-\sunnyLine{}
+\emptyLine{}
 
 \noindent
 \textbf{Academic Advisor}: Xxx Yyy \\
 \textbf{Faculty Reviewer}:  Zzz Www
-\sunnyLine{}
+\emptyLine{}
 
 \noindent\textbf{Start- and end-date}: 20120101 - 20120601
-\sunnyLine{}
+\emptyLine{}
 
 \noindent\textbf{Thesis type (research / industrial, theoretical / empirical)}: industrial, empirical
-\sunnyLine{}
+\emptyLine{}
 
 \subsection*{Student 1 suitability}
 \noindent\textbf{Electrical engineering course credits completed at BTH (total)}: 82.5 ECTS credit points
-\sunnyLine{}
+\emptyLine{}
 
 \noindent\textbf{Software engineering courses completed at BTH relevant for thesis work}:
 \begin{itemize}
@@ -135,7 +144,7 @@
 
 \subsection*{Student 2 suitability}
 \noindent\textbf{Electrical engineering course credits completed at BTH (total)}: 75 ECTS credit points
-\sunnyLine{}
+\emptyLine{}
 
 \noindent\textbf{Software engineering courses completed at BTH relevant for thesis work}:
 \begin{itemize}
@@ -160,7 +169,7 @@ This is paragraph 3.
 
 \section{\large\textit{Aims and objectives}}
 %{1 sentence clearly stating the main aim of this thesis project.}
-
+...
 %{3-7 objectives/sub-goals that follows from the main aim. By reaching them the main aim is fulfilled.}
 \begin{itemize}
 \item{...}
@@ -218,7 +227,7 @@ Scheduled Milestones and Meetings:
 \item{20080215: Final thesis updated, approved and sent to examiner}
 \end{itemize}
 
-References
+
 \begin{thebibliography}{}
 \bibitem{test KeyName}Lamport, Leslie. \LaTeX{}: A Document Preparation
 System.

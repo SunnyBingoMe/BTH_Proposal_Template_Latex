@@ -7,9 +7,11 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \documentclass[10pt,english,a4paper]{article}
-\usepackage[T1]{fontenc}
 \usepackage[scaled=1.12]{helvet}
 \renewcommand*\familydefault{\sfdefault}
+
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
 \pagestyle{plain}
 \usepackage{varioref}
 \usepackage{prettyref}
@@ -32,7 +34,8 @@
 \renewcommand{\footnotesize}{}
 \makeatletter
 
-\usepackage[top=3.05cm, bottom=2.5cm, left=2.5cm, right=2.5cm, headsep=1.2cm, foot=1.2cm]{geometry}
+\usepackage[a4paper]{geometry}
+\geometry{verbose,tmargin=3.05cm,bmargin=2.5cm,lmargin=2.5cm,rmargin=2.5cm,headheight=1.2cm,headsep=1.2cm,footskip=1.2cm}
 \linespread{1.1}
 \setcounter{secnumdepth}{0}
 

@@ -7,13 +7,14 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Name: BTH Master Thesis Proposal Template for Latex version 3.1
 %% Author: admin@SunnyBoy.me
-%% Code Version: 2011.12.30.03.35-1.0a
+%% Code Version: 2011.12.30.05.00-1.0b
 %% 2011-12-30
 %% Based on MicroSoft Word Thesis Proposal Template version 3.1 (http://is.gd/nbzCjS)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \usepackage[scaled=1.12]{helvet}\renewcommand*{\familydefault}{\sfdefault}
+
 
 \addtolength{\bibsep}{-0.6 em} 
 
@@ -28,6 +29,7 @@
 \cfoot{}
 \rfoot{Page \thepage}
 \renewcommand{\footnotesize}{}
+
 
 
 \linespread{1.1}
@@ -51,11 +53,12 @@
 
 \usepackage{babel}
 \end_preamble
+\options scaled=1.12
 \use_default_options false
 \maintain_unincluded_children false
 \language english
 \language_package default
-\inputencoding auto
+\inputencoding latin9
 \fontencoding global
 \font_roman default
 \font_sans helvet
@@ -64,7 +67,7 @@
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
-\font_sf_scale -1
+\font_sf_scale 112
 \font_tt_scale 100
 
 \graphics default
@@ -72,11 +75,11 @@
 \output_sync 0
 \bibtex_command default
 \index_command default
-\paperfontsize 10
+\paperfontsize default
 \spacing single
 \use_hyperref false
 \papersize a4paper
-\use_geometry false
+\use_geometry true
 \use_amsmath 1
 \use_esint 1
 \use_mhchem 1
@@ -91,6 +94,13 @@
 \shortcut idx
 \color #008000
 \end_index
+\leftmargin 2.5cm
+\topmargin 3.05cm
+\rightmargin 2.5cm
+\bottommargin 2.5cm
+\headheight 1.2cm
+\headsep 1.2cm
+\footskip 1.2cm
 \secnumdepth 0
 \tocdepth 3
 \paragraph_separation indent
